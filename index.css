@@ -1,0 +1,256 @@
+@import url(https://db.onlinewebfonts.com/c/0abeb2471faeb5269db428b9eac2075e?family=GT+Walsheim+Pro+Regular+Regular);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "GT Walsheim Pro Regular Regular";
+    color: #555;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #0048FF;
+    text-align: center;
+}
+
+h4 {
+    color: #002B9A;
+    font-family: GT Walsheim Pro;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+p {
+    color: #555;
+    font-family: inherit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    padding: 20px 0; 
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.logo-main {
+    width: 60px;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: inherit;
+    font-family: inherit;
+}
+
+.nav-items > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link-btn {
+    padding: 5px 15px;
+    border: 1px solid #FFC1DC;
+    border-radius: 100px;
+}
+
+.hero {
+    margin-top: 100px;
+    display: flex;
+    padding: 50px;
+}
+
+.hero-text > h3 {
+    background: linear-gradient(91deg, #0048FF 3.42%, #D6008D 82.66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.hero-text .link-btn {
+    border: none;
+    background: linear-gradient(238deg, #09153F 1.24%, #002BC2 57.38%);
+    color: #fff;
+    
+}
+
+.hero-text, .hero-img {
+    width: 50%;
+}
+
+
+
+.hero-img {
+    display: flex;
+    justify-content: end;
+}
+
+.main-img {
+    width: 500px;
+}
+
+section {
+    width: 92%;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+
+}
+
+section .img-sect {
+    width: 300px;
+}
+
+.about {
+    background-color: #EDF7FF;
+    border-radius: 500px 500px 500px 500px;
+}
+
+.h-about {
+    flex-basis: 2;
+    flex-grow: 2;
+    padding: 40px;
+    border-radius: 500px 0px 0px 500px;
+    border-right: 3px solid #C4D4FF;
+    background: #FFF;
+}
+
+
+.p-about {
+    flex-basis: 8;
+    flex-grow: 8;
+    padding: 50px;
+}
+
+.non-it {
+    background-color: #FFF5FF;
+    border-radius: 0px 500px 500px 0px;
+    padding: 50px;
+}
+
+.software-p {
+    padding: 50px;
+    background-color: #F5F8FF;
+    border-radius: 500px 0px 0px 500px;
+}
+
+.services a {
+    border: 1px solid #0048FF !important;
+}
+
+.service-map {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #F9F9F9;
+}
+
+.service-map-items ul li {
+    color: #555;
+    font-family: inherit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.service-map .section-text {
+    width: 30%;
+}
+
+.service-map-items {
+    width: 70%;
+}
+
+.view-services {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-services-a {
+    text-decoration: underline;
+    color: #002B9A;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFF7FF;
+}
+
+.contact-text > h3 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form > input,
+.contact-form > textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 150px;
+    background-color: #0048FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 10px auto;
+}
+
+footer {
+    width: 92%;
+    margin: 25px auto;
+    padding: 5px 50px;
+    border-radius: 2px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 19em;
+    background: #333;
+}
+
+footer p {
+    color: #fff;
+    font-size: 15px;
+}
