@@ -64,12 +64,22 @@ a {
     color: inherit;
     font-family: inherit;
 }
+.nav-items {
+    display: flex;
+    align-items: center;
+}
 
-.nav-items > ul {
+.menu-list {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+#menu-dropdown {
+    display: none;
+}
+.fa-bars {
+    font-size: 30px;
 }
 
 .link-btn {
@@ -104,8 +114,6 @@ a {
 .hero-text, .hero-img {
     width: 50%;
 }
-
-
 
 .hero-img {
     display: flex;
@@ -143,6 +151,10 @@ section .img-sect {
     border-radius: 500px 0px 0px 500px;
     border-right: 3px solid #C4D4FF;
     background: #FFF;
+}
+
+.h-about>h3 {
+    text-align: left;
 }
 
 
@@ -246,11 +258,88 @@ footer {
     height: 70px;
     display: flex;
     align-items: center;
-    gap: 19em;
     background: #333;
 }
 
 footer p {
     color: #fff;
     font-size: 15px;
+}
+footer > p:first-child {
+    margin-right: 19em;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+    .nav {
+        justify-content: flex-start;
+    }
+    .nav .logo {
+        margin-right: auto;
+    }
+    .hero-text, 
+    .hero-img,
+    .contact-form,
+    .service-map .section-text,
+    .service-map-items,
+    .p-about {
+        width: 100%;
+    }
+    .menu-list {
+      display: none;
+    }
+    #menu-dropdown {
+      display: flex;
+      margin-right: 1.5em;
+      position: relative;
+    }
+    .dropdown-list {
+        list-style: none;
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: -5;
+        padding: 12px 30px;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    #menu-dropdown:hover .dropdown-list {
+        display: block;
+    }
+    .dropdown-list .nav-list {
+        margin: 20px;
+        cursor: pointer;
+        color: rgb(137, 24, 24);
+    }
+    .dropdown-list .nav-list:hover {
+        background-color: #0048FF;
+        color: #fff;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .hero, section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about {
+        padding: 30px;
+    }
+    .h-about {
+        margin-bottom: 0;
+    }
+    .p-about {
+        margin-top: 0;
+    }
+    footer {
+        justify-content: space-between;
+        width: 100%;
+    } 
+    footer > p:first-child {
+        margin-right: 0;
+    } 
 }
